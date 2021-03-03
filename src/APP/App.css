@@ -1,0 +1,13 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+
+.flexH{
+  display: flex;
+  flex-direction: row;
+}
+.flexV{
+  display: flex;
+  flex-direction: column;
+}
