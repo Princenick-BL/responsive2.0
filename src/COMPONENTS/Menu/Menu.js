@@ -34,8 +34,8 @@ export default function Menu() {
           
                 <Fragment>
                     <nav className="menu flexH" >
-                    {(largeur>500 || toggleMenu)&&(
-                        <div className={!toggleMenu ?"menuContainer closed flexV": "menuContainer opened flexV" }>
+                    {(largeur>500 || !toggleMenu)&&(
+                        <div className="menuContainer flexV">
                             <img className="logo" src={logo} alt='Logo'></img>
                             <div className="user">
                                 
@@ -52,21 +52,21 @@ export default function Menu() {
                         </div>
                          )}
                         <div className="toggleMenu flexV" onClick={showMenu}>
-                            <div className={toggleMenu ?"change": "dimiss " }></div>
-                            <div className={toggleMenu ?"change": "dimiss " }></div>
-                            <div className={toggleMenu ?"change": "dimiss " }></div>
+                            <div className={!toggleMenu ?"change": "dimiss " }></div>
+                            <div className={!toggleMenu ?"change": "dimiss " }></div>
+                            <div className={!toggleMenu ?"change": "dimiss " }></div>
 
-                            <div className={toggleMenu ? "dimiss " :"flexH t"}>
+                            <div className={!toggleMenu ? "dimiss " :"flexH t"}>
                                 <div className="nav-btn-span l "></div>
                                 <div className="nav-btn-span l "></div>
                                 <div className="nav-btn-span l"></div>
                             </div>   
-                            <div className={toggleMenu ? "dimiss " :"flexH t"}>
+                            <div className={!toggleMenu ? "dimiss " :"flexH t"}>
                                 <div className="nav-btn-span l"></div>
                                 <div className="nav-btn-span l "></div>
                                 <div className="nav-btn-span l"></div>
                             </div>
-                            <div className={toggleMenu ? "dimiss " :"flexH t"}>
+                            <div className={!toggleMenu ? "dimiss " :"flexH t"}>
                                 <div className="nav-btn-span l"></div>
                                 <div className="nav-btn-span l "></div>
                                 <div className="nav-btn-span l"></div>
