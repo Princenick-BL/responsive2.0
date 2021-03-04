@@ -1,3 +1,21 @@
+/*----------------  MENU HORIZONTAL -------------------*/
+.menuTop{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 2px 3px #ccc;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+
+
+
 .menu{
     position: absolute;
     float: left;
@@ -50,6 +68,7 @@
 @media screen and (max-width:500px){
  
     .toggleMenu{
+        
         transition: 0.4s;
         padding: 5px;
         width: 50px;
