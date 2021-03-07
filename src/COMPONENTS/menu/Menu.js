@@ -1,5 +1,10 @@
 import React,{Fragment, useState,useEffect} from 'react'
-import logo from '../../MEDIAS/eilco.png'
+import UsrImg from '../../MEDIAS/no-photo.png'
+import FacebookLogo from '../../MEDIAS/Facebook.png'
+import InstagrameLogo from '../../MEDIAS/Instagram.png'
+import GmailLogo from '../../MEDIAS/Gmail.png'
+import LinkedinLogo from '../../MEDIAS/Linkedin.png'
+import WhatsappLogo from '../../MEDIAS/Whatsapp.png'
 import './Menu.css'
 
 export default function Menu() {
@@ -31,23 +36,24 @@ export default function Menu() {
     return (
 
             <Fragment>
-                <nav className="menuTop">
+                <nav className="menuTop dark2">
                     <div className="toggleMenu flexV center" onClick={showMenu}>
                         
-                        <div className={!toggleMenu ? "dimiss " :"flexH t"}>
-                            <div className="nav-btn-span l "></div>
-                            <div className="nav-btn-span l "></div>
-                            <div className="nav-btn-span l"></div>
+                        <div className={toggleMenu ? "dimiss " :"flexH t"}>
+                            <div className="nav-btn-span l dark3"></div>
+                            <div className="nav-btn-span l dark3"></div>
+                            <div className="nav-btn-span l dark3"></div>
                         </div>   
-                        <div className={!toggleMenu ? "dimiss " :"flexH t"}>
-                            <div className="nav-btn-span l"></div>
-                            <div className="nav-btn-span l "></div>
-                            <div className="nav-btn-span l"></div>
+                        <div className={toggleMenu ? "dimiss " :"flexH t"}>
+
+                            <div className="nav-btn-span l dark3"></div>
+                            <div className="nav-btn-span l dark3"></div>
+                            <div className="nav-btn-span l dark3"></div>
                         </div>
-                        <div className={!toggleMenu ? "dimiss " :"flexH t"}>
-                            <div className="nav-btn-span l"></div>
-                            <div className="nav-btn-span l "></div>
-                            <div className="nav-btn-span l"></div>
+                        <div className={toggleMenu ? "dimiss " :"flexH t"}>
+                            <div className="nav-btn-span l dark3"></div>
+                            <div className="nav-btn-span l dark3"></div>
+                            <div className="nav-btn-span l dark3"></div>
                         </div>
 
                     </div>
@@ -55,28 +61,48 @@ export default function Menu() {
                 </nav>
                 
                 <nav className="menu flexH" >
-                    {(largeur>500 || !toggleMenu)&&(
-                        <div className="menuContainer flexV">
-                        <img className="logo" src={logo} alt='Logo'></img>
+                    {(largeur>500 || toggleMenu)&&(
+                    <div className="menuContainer dark1 flexV">
+                        <Fragment></Fragment>
+
+                        <div className="UsrImgContainer center">
+                            <img className="UsrImg" src={UsrImg} alt="logo"></img>
+                        </div>
+
                         <div className="user">
                                 
                             <div className="userFirstname">BALLO</div>
                             <div className="userName">Prince Nick</div>
 
                         </div>
+
                         <ul className="menuOptions">
-                            <li className="MenuOption">Option 1</li>
-                            <li className="MenuOption">Option 2</li>
-                            <li className="MenuOption">Option 3</li>
-                            <li className="MenuOption">Option 4</li>                            
+                            <li className="accueil">
+                                <a id="test" href="/">Accueil</a>
+                            </li>
+                            <li className="ressources">
+                                <a href="/">Ressources</a>
+                            </li>
+                            <li className="contact">
+                                <a href="/">Contact</a>
+                            </li>                         
                         </ul>
+                        
+                        <div className="media">
+                            <img src={FacebookLogo} alt="facebooklogo"></img>
+                            <img src={InstagrameLogo} alt="facebooklogo"></img>
+                            <img src={WhatsappLogo} alt="facebooklogo"></img>
+                            <img src={LinkedinLogo} alt="facebooklogo"></img>
+                            <img src={GmailLogo} alt="facebooklogo"></img>     
+                        </div>
+
                     </div>
                      )}
                     <div className="toggleMenu flexV" onClick={showMenu}>
                             
-                        <div className={!toggleMenu ?"change": "dimiss " }></div>
-                        <div className={!toggleMenu ?"change": "dimiss " }></div>
-                        <div className={!toggleMenu ?"change": "dimiss " }></div>
+                        <div className={toggleMenu ?"change dark3": "dimiss " }></div>
+                        <div className={toggleMenu ?"change dark3": "dimiss " }></div>
+                        <div className={toggleMenu ?"change dark3": "dimiss " }></div>
     
                     </div>       
                 </nav>
