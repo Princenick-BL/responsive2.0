@@ -143,7 +143,7 @@
  
     .toggleMenu{
         float: right;
-        transition: 0.4s;
+        
         width: 50px;
         height: 50px; 
     }
@@ -158,5 +158,30 @@
     
     }
   
+    .dimiss{
+        transition: 0.4s;
+        display: none;
+    }
+    .change {
+
+        transition: 0.4s;
+        width: 30px;
+        height: 5px;
+        margin: 5px auto;
+       
+    }
+    .change:nth-child(1){
+
+        -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+         transform: rotate(-45deg) translate(-14px, 12px);
+    }
+    .change:nth-child(2){
+        opacity: 0;
+    }
+    .change:nth-child(3){
+
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
     
 }
