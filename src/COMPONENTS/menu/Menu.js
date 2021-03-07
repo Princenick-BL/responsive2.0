@@ -39,25 +39,23 @@ export default function Menu() {
                 <nav className="menuTop dark2">
                     <div className="toggleMenu flexV center" onClick={showMenu}>
                         
-                        <div className={toggleMenu ? "dimiss " :"flexH t"}>
+                        <div className="flexH t">
                             <div className="nav-btn-span l dark3"></div>
                             <div className="nav-btn-span l dark3"></div>
                             <div className="nav-btn-span l dark3"></div>
                         </div>   
-                        <div className={toggleMenu ? "dimiss " :"flexH t"}>
-
+                        <div className="flexH t">
                             <div className="nav-btn-span l dark3"></div>
                             <div className="nav-btn-span l dark3"></div>
                             <div className="nav-btn-span l dark3"></div>
                         </div>
-                        <div className={toggleMenu ? "dimiss " :"flexH t"}>
+                        <div className="flexH t">
                             <div className="nav-btn-span l dark3"></div>
                             <div className="nav-btn-span l dark3"></div>
                             <div className="nav-btn-span l dark3"></div>
                         </div>
-
                     </div>
-  
+                    <div className="LOGO">My App</div>
                 </nav>
                 
                 <nav className="menu flexH" >
@@ -98,13 +96,7 @@ export default function Menu() {
 
                     </div>
                      )}
-                    <div className="toggleMenu flexV" onClick={showMenu}>
-                            
-                        <div className={toggleMenu ?"change dark3": "dimiss " }></div>
-                        <div className={toggleMenu ?"change dark3": "dimiss " }></div>
-                        <div className={toggleMenu ?"change dark3": "dimiss " }></div>
-    
-                    </div>       
+                        
                 </nav>
             </Fragment>
     )
