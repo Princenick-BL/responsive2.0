@@ -29,7 +29,6 @@
     animation: 3s linear 1s infinite running slidein;
     border-right: 2px solid #ccc;
     height: 100vh;
-    padding: 10px;
     transition:  100s;
     transition-timing-function: linear;
 }
@@ -118,7 +117,7 @@
 /* log media*/
 .media{
     position: absolute;
-    bottom: 10px;
+    bottom: 50px;
     margin: 100px auto;
     display: flex;
     justify-content: space-between;
@@ -156,7 +155,7 @@
     .change {
 
         
-        width: 40px;
+        width: 30px;
         height: 5px;
         margin: 5px auto;
        
@@ -164,7 +163,7 @@
     .change:nth-child(1){
 
         -webkit-transform: rotate(-45deg) translate(-8px, 8px);
-         transform: rotate(-45deg) translate(-13px, 12px);
+         transform: rotate(-45deg) translate(-14px, 12px);
     }
     .change:nth-child(2){
         opacity: 0;
