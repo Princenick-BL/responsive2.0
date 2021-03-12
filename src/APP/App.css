@@ -40,3 +40,13 @@
   align-items: center;
   text-align: center;
 }
+
+/*RESPONSIVE*/
+@media screen and (max-width:500px){
+  .dark1{
+      background-image: url("../MEDIAS/dark1.jpg");
+  }
+  .dark2{
+    background-color: transparent;
+  }
+}
